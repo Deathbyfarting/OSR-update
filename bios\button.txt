@@ -1,0 +1,16 @@
+
+
+--example
+--local things,var = thisIsATest.new(12,12,12,12,12,"stuff",13)
+
+new = function(x,y,MX,MY,endY,text,id)
+term.setCursorPos(x,y)
+print(text)
+if x == MX and y < MY and endY > MY then
+isPushed = true
+else
+isPushed = false
+end
+return id,isPushed
+end
+
